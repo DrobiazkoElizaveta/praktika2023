@@ -22,8 +22,9 @@
 <header>
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container">
-      <a href="./index.html"><img src="./img/logo.svg" class="logo" alt="logo" width="120"></a>
+      <a href="./index.html"><img src="./img/logo.svg" class="logo" alt="logo" width="100"></a>
       <a href="" class="text_link">BEAUTY COSMETICS</a>
+      </div>
 </header>
 
 <main>
@@ -87,6 +88,64 @@
 
     <hr class="featurette-divider">
 
+    <div class="list_product">
+      <section>
+        <h2 class="featurette-heading fw-normal lh-1">Выбери свой продукт!</h2>
+      </section>
+      <section class="list_products">
+        <div>
+        <label for="marka">Введите бренд :</label>
+        <input
+          name="input"
+          list="brand"
+          id="marka"
+          type="text"
+          placeholder="Covergirl"
+          autocomplete="on"
+        />
+        <datalist id="brand">
+        </datalist>
+        </div>
+        <br />
+        <div>
+        <label for="product">Введите тип продукта :</label>
+        <input
+          name="input"
+          list="product_type"
+          id="product"
+          type="text"
+          placeholder="Bвод на латинице"
+          autocomplete="on"
+        />
+        <datalist id="product_type">
+        </datalist>
+      </div>
+      <div>
+        <button class="btn" type="button" onclick="krData()">
+          Найти продукт
+        </button>
+      </div>
+      </section>
+      <div class="button_sort">
+        <div>
+      <button id="sort-asc">&darr;</button>
+      <button id="sort-desc">&uarr;</button>
+      </div>
+      <div>
+      <label for="min-price">Мин. цена:</label>
+  <input type="number" id="min-price" name="min-price">
+  
+  <label for="max-price">Макс. цена:</label>
+  <input type="number" id="max-price" name="max-price">
+  </div>
+      </div>
+      
+      <div id="products">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Красота спасет мир!</h2>
@@ -120,91 +179,6 @@
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./img/Без названия (2).jpg" alt="foto" width="500">
       </div>
     </div>
-  </div>
-  <div class="list_product">
-    <section>
-      <h2 class="featurette-heading fw-normal lh-1">Выбери свой продукт!</h2>
-    </section>
-    <section>
-      <label for="marka">Введите бренд :</label>
-      <input
-        name="input"
-        list="brand"
-        id="marka"
-        type="text"
-        placeholder="Covergirl"
-        autocomplete="on"
-      />
-      <datalist id="brand">
-        <option value="Almay"></option>
-        <option value="Anna Sui"></option>
-        <option value="Annabelle"></option>
-        <option value="Benefit"></option>
-        <option value="Burts Bees"></option>
-        <option value="Butter London"></option>
-        <option value="Cargo Cosmetics"></option>
-        <option value="China Glaze"></option>
-        <option value="Covergirl"></option>
-        <option value="Dalish"></option>
-        <option value="Dr. Hauschka"></option>
-        <option value="e.l.f."></option>
-        <option value="Essie"></option>
-        <option value="Iman"></option>
-        <option value="L'Oreal"></option>
-        <option value="Marcelle"></option>
-        <option value="Maybelline"></option>
-        <option value="Milani"></option>
-        <option value="Mineral Fusion"></option>
-        <option value="Misa"></option>
-        <option value="Mistura"></option>
-        <option value="Moov"></option>
-        <option value="NYX"></option>
-        <option value="Orly"></option>
-        <option value="Pacifica"></option>
-        <option value="Physicians Formula"></option>
-        <option value="Piggy Paint"></option>
-        <option value="Pure Anada"></option>
-        <option value="Revlon"></option>
-        <option value="Salon Perfect"></option>
-        <option value="Sante"></option>
-        <option value="Sinful Colours"></option>
-        <option value="Smashbox"></option>
-        <option value="Stila"></option>
-        <option value="Suncoat"></option>
-        <option value="Wet n' Wild"></option>
-        <option value="Zorah"></option>
-      </datalist>
-
-      <br />
-      <label for="product">Введите тип продукта :</label>
-      <input
-        name="input"
-        list="product_type"
-        id="product"
-        type="text"
-        placeholder="Начните ввод на латинице"
-        autocomplete="on"
-      />
-      <datalist id="product_type">
-        <option value="blush"></option>
-        <option value="bronzer"></option>
-        <option value="eyebrow"></option>
-        <option value="eyeliner"></option>
-        <option value="eyeshadow"></option>
-        <option value="foundation"></option>
-        <option value="lip_liner"></option>
-        <option value="lipstick"></option>
-        <option value="mascara"></option>
-        <option value="nail_polish"></option>
-      </datalist>
-      <button class="btn" type="button" onclick="krData()">
-        Выполнить запрос
-      </button>
-    </section>
-  </div>
-
-  <div class="table-responsive">
-    
   </div>
 </main>
 
