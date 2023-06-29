@@ -31,7 +31,7 @@ async function krData() {
         const productCard = `
           <div class="cards">
           <div class="card">
-            <img src="${product.image_link}" alt="${product.name}">
+            <img src="${product.image_link}" alt="НЕТ ИЗОБРАЖЕНИЯ">
             <h3>${product.name}</h3>
             <p>${product.price}$</p>
           </div>
